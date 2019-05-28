@@ -1,13 +1,12 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
-
-import React, { Component } from 'react'
+import{ Component } from 'react'
 
 export default class App extends Component {
   componentDidMount(){
-    axios.get('https://i1i35qkgci.execute-api.us-east-2.amazonaws.com/Dev/employee/1/status')
+    axios.get('employee/1')
       .then(function (response) {
         console.log(response);
       })
