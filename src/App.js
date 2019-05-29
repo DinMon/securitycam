@@ -6,7 +6,7 @@ import{ Component } from 'react'
 
 export default class App extends Component {
   componentDidMount(){
-    axios.get('employee/1')
+    axios.get('https://i1i35qkgci.execute-api.us-east-2.amazonaws.com/Dev/employee/1')
       .then((response) => {
         this.setState(response.data)
       })
